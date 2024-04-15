@@ -1,15 +1,19 @@
-//
-// Created by rafaf.tahsin on 2/5/24.
-//
-
-
 #ifndef LEETCODE_217_H
 #define LEETCODE_217_H
-
 #endif //LEETCODE_217_H
 
-class Solution
-{
+#include "vector"
+#include "set"
+
+class Solution {
 public:
-    static bool containsDuplicate(std::vector<int>& nums);
+    bool containsDuplicate(std::vector<int>& nums) {
+        int size = nums.size();
+
+        std::set<int> nums_set(nums.begin(), nums.end());
+
+        int set_size = nums_set.size();
+
+        return size != set_size;
+    }
 };

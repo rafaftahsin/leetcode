@@ -6,8 +6,8 @@ set(Boost_INCLUDE_DIR /opt/boost_1_84_0)
 find_package(Boost 1.84.0)
 include_directories(${Boost_INCLUDE_DIR})
 
-add_executable(dt
-        217/217.cpp
+add_executable(p217
         217/217_Test.cpp
         217/217.h
 )
+
