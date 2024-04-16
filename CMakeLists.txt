@@ -7,6 +7,6 @@ find_package(Boost 1.84.0)
 include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(p242
-        242/242_tests.cpp
+        1/1_tests.cpp
 )
 
