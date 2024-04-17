@@ -6,7 +6,7 @@ find_package(Boost 1.84.0)
 include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(leetcode
-        347/347_tests.cpp
+        149/149_tests.cpp
 )
 #set_target_properties(leetcode PROPERTIES LINKER_LANGUAGE CXX)
 

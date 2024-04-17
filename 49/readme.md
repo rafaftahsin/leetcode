@@ -28,3 +28,7 @@ https://www.educative.io/answers/how-to-iterate-through-a-vector-in-cpp
 
 https://stackoverflow.com/questions/70146539/check-if-map-contains-a-certain-value
 
+### how to check if some key is present in map 
+
+https://cplusplus.com/reference/map/map/count/
+
