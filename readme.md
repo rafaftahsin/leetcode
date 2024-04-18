@@ -8,3 +8,6 @@ DP - https://leetcode.com/studyplan/dynamic-programming/
 
 Top 100 Liked Q - https://leetcode.com/studyplan/top-100-liked/
 
+Shell Script Problems - https://leetcode.com/problemset/shell/
+
+Database Problems - https://leetcode.com/problemset/database/
