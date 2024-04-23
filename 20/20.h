@@ -15,39 +15,28 @@ using namespace std;
 namespace leetcode20 {
     class Solution {
 
-
-    private:
-        queue<char> remove_parenthesis( queue<char> &q, char parenthesis_begin, char parenthesis_end) {
-            queue<char> r;
-
-            while( !q.empty()) {
-                char sym = q.front();
-                q.pop();
-
-                if ( sym == parenthesis_begin) {
-                    if(q.front() == parenthesis_end)
-                        q.pop();
-                } else {
-                    r.push(sym);
-                }
-            }
-
-            return r;
-        }
     public:
         bool isValid(string s) {
 
-            queue<char > q;
+            stack<char>st;
+            map<char, char>m {
+                    {')', '('},
+                    {'}', '{'},
+                    {']', '['}
+            };
 
-            for( char i : s) {
-                q.push(i);
+            for( char c: s) {
+                if ( c == '(' || c == '{' || c == '[')
+                    st.push(c);
+                else {
+
+                    if( st.empty() || st.top() != m[c])
+                        return false;
+                    else
+                        st.pop();
+                }
             }
-
-            q = remove_parenthesis(q, '(', ')');
-            q = remove_parenthesis(q, '{', '}');
-            q = remove_parenthesis(q, '[', ']');
-
-            return q.empty();
+            return st.empty();
         }
     };
 }

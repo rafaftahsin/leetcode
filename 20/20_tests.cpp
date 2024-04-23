@@ -47,12 +47,42 @@ BOOST_AUTO_TEST_SUITE(test_suite_20)
         BOOST_TEST( result == expected );
     }
 
-    BOOST_AUTO_TEST_CASE(test_case_)
+    BOOST_AUTO_TEST_CASE(test_case_5)
     {
         string s = "{[]}";
 
         bool result = sol.isValid(s);
         bool expected = true;
+
+        BOOST_TEST( result == expected );
+    }
+
+    BOOST_AUTO_TEST_CASE(test_case_6)
+    {
+        string s = "([])";
+
+        bool result = sol.isValid(s);
+        bool expected = true;
+
+        BOOST_TEST( result == expected );
+    }
+
+    BOOST_AUTO_TEST_CASE(test_case_7)
+    {
+        string s = "(([]){})";
+
+        bool result = sol.isValid(s);
+        bool expected = true;
+
+        BOOST_TEST( result == expected );
+    }
+
+    BOOST_AUTO_TEST_CASE(test_case_8)
+    {
+        string s = "]";
+
+        bool result = sol.isValid(s);
+        bool expected = false;
 
         BOOST_TEST( result == expected );
     }
