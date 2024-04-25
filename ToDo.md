@@ -1,0 +1,2 @@
+- [ ] Need to solve 22 again with a better solution
+- [ ] Daily Temparature
