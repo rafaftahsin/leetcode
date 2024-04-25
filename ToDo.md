@@ -1,2 +1,3 @@
 - [ ] Need to solve 22 again with a better solution
 - [ ] Daily Temparature
+- [ ] Need to write a template which will genertate a boilerplate for new problem solution.
