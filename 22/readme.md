@@ -2,7 +2,7 @@
 
 https://learn.microsoft.com/en-us/cpp/cpp/header-files-cpp?view=msvc-170
 
-### Solution 1
+### Recursive Time consuming solution
 
 ```c++
 //
@@ -63,3 +63,18 @@ public:
     }
 };
 ```
+
+### Tuple
+
+https://en.cppreference.com/w/cpp/utility/tuple
+
+### string constructor
+
+`string (size_t n, char c);`
+
+https://cplusplus.com/reference/string/string/string/
+
+### Assign Value to a tuple
+
+https://stackoverflow.com/questions/7453600/how-to-set-stdtuple-element-by-index
+
