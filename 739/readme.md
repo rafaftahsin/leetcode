@@ -170,3 +170,11 @@ public:
     }
 };
 ```
+
+### List container 
+
+- sort : https://www.geeksforgeeks.org/stdlistsort-c-stl/
+- https://www.geeksforgeeks.org/list-cpp-stl/
+- erase : https://en.cppreference.com/w/cpp/container/list/erase
+- https://en.cppreference.com/w/cpp/container/list
+- 
