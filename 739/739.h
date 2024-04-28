@@ -3,6 +3,7 @@
 //
 
 #include <queue>
+#include "stack"
 
 #ifndef LEETCODE_739_H
 #define LEETCODE_739_H
@@ -13,18 +14,21 @@ using namespace std;
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        auto cmp = [&temperatures](int &a, int &b) -> bool { return temperatures[a] > temperatures[b]; };
-        priority_queue< int, vector<int>, decltype(cmp) > pq(cmp);
+        stack <int > s;
 
-        vector<int> result(temperatures.size(), 0);
         for( int i=0; i<temperatures.size(); i++) {
-            while ( !pq.empty() && temperatures[pq.top()] < temperatures[i]) {
-                result[pq.top()] = i - pq.top();
-                pq.pop();
+            while( !s.empty() && temperatures[ s.top() ] < temperatures[i]) {
+                temperatures[s.top()] = i - s.top();
+                s.pop();
             }
-            pq.push(i);
+            s.push(i);
         }
 
-        return result;
+        while (!s.empty()) {
+            temperatures[s.top()] = 0;
+            s.pop();
+        }
+
+        return temperatures;
     }
 };
