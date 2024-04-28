@@ -1,3 +1,7 @@
+### Solve the easier version
+
+https://leetcode.com/problems/next-greater-element-i/description/
+
 ### TLE Solution
 
 ```c++
@@ -177,4 +181,36 @@ public:
 - https://www.geeksforgeeks.org/list-cpp-stl/
 - erase : https://en.cppreference.com/w/cpp/container/list/erase
 - https://en.cppreference.com/w/cpp/container/list
-- 
+
+### `std::find`
+
+- https://www.geeksforgeeks.org/std-find-in-cpp/
+- https://stackoverflow.com/questions/571394/how-to-find-out-if-an-item-is-present-in-a-stdvector
+
+### priority_queue
+
+- https://en.cppreference.com/w/cpp/container/priority_queue
+
+### compare function 
+
+- https://en.cppreference.com/w/cpp/named_req/Compare
+
+### priority_queue with custom compare function 
+
+```c++
+auto compare = [](int left, int right) {
+        return left < right;
+    };
+    priority_queue<int, vector<int>, decltype(compare)> pq(
+        compare);
+```
+
+- https://www.geeksforgeeks.org/multiple-comparisons-in-a-c-priority-queue/
+- https://www.geeksforgeeks.org/custom-comparator-in-priority_queue-in-cpp-stl/
+- https://stackoverflow.com/a/55665287/4814427
+
+### inserting in priority_queue vs sort a vector (which one is faster)
+
+- https://stackoverflow.com/questions/3759112/whats-faster-inserting-into-a-priority-queue-or-sorting-retrospectively
+
+
