@@ -42,4 +42,6 @@ BOOST_AUTO_TEST_SUITE(test_suite_22)
         BOOST_TEST( result == expected );
     }
 
+
+
 BOOST_AUTO_TEST_SUITE_END()
