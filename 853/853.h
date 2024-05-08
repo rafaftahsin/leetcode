@@ -42,8 +42,8 @@ public:
             double t2 = (double) dis2 / (double) p2.second;
 
             if (t2 <= t1) {
-                double x = ( dis2 * p1.second - dis1 * p2.second ) / ( p1.second - p2.second );
-                stk.push(make_pair(x, p2.second));
+                double x = (double )( dis2 * p1.second - dis1 * p2.second ) / (double ) ( p1.second - p2.second );
+                stk.push(make_pair(target - x, p2.second));
             }
             else {
                 stk.push(p1);
